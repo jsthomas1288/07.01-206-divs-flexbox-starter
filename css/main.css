@@ -96,36 +96,107 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
-  height: 100%;
+  background-color: black;
 }
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
   padding: 2em;
   font-size: 1.25em;
-  height: 100%;
+  background: black;
+}
+
+.row-one h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin-bottom: 2em;
+  margin-top: 0.1em;
 }
 
 .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 700;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .div-1,
 .div-2,
 .div-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  color: #fff;
+  width: 100%;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
+  font-size: 0.75em;
+  padding: 20px;
+}
+
+/*** TABLET ***/
+
+@media (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    height: 325px;
+  }
+
+  .div-1,
+  .div-2,
+  .div-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+    width: 33.3333%;
+    height: 200px;
+    line-height: 1.5em;
+    font-size: 0.75em;
+  }
+
+  .div-1 {
+    border-left: none;
+  }
+
+  .div-3 {
+    border-right: none;
+  }
+}
+
+/*** DESKTOP ***/
+
+@media (min-width: 1200px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    height: 300px;
+  }
+
+  .div-1,
+  .div-2,
+  .div-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+    width: 33.3333%;
+    height: 200px;
+    line-height: 1.5em;
+    font-size: 0.75em;
+  }
+
+  .div-1 {
+    border-left: none;
+  }
+
+  .div-3 {
+    border-right: none;
+  }
 }
 
 /* ==========================================================================
